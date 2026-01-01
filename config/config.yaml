@@ -1,0 +1,31 @@
+# ========================
+# 西电体育馆预约脚本配置文件
+# ========================
+
+# 1. 请求头信息 (从浏览器F12复制)
+request_headers:
+  User-Agent: "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36 Edg/143.0.0.0"
+  Cookie: '将浏览器中的Cookie复制到此处 '
+
+OrderFieldFree: "https://gyytygyy.xidian.edu.cn/Field/OrderFieldFree"
+# 2. 场地类型信息
+field_types:
+  羽毛球:
+    VenueNo: '02'
+    FieldTypeNo: '021'
+    FieldNo: 'GYMQ###'
+    FieldName: '羽毛球馆#号'
+    FieldNoRange: [1, 2]
+  篮球:
+    VenueNo: '02'
+    FieldTypeNo: '022'
+  健身房:
+    VenueNo: '02'
+    FieldTypeNo: '023'
+    FieldNo: 'GJS###'
+    FieldName: '健身房###'
+    FieldNoRange: [1, 40]
+
+message:
+  success: '预约成功'
+  fail: '预约失败'
